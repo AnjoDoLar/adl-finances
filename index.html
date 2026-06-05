@@ -510,7 +510,7 @@ function renderTable(fil) {
       '<td class="td-obs">'+(e.observation||'')+'</td>'+
      '<td class="td-actions">'+
 '<button class="btn-action btn-edit" onclick="editEntry(\''+e.id+'\')" title="Editar"><i class="fa-solid fa-pen"></i></button>'+
-'<button class="btn-action btn-del" onclick="confirmDeleteEntry(\''+e.id+'\', \''+(e.description||'').replace(/'/g,"\\'")+'\')" title="Excluir"><i class="fa-solid fa-trash-can"></i></button>'+
+'<button class="btn-action btn-del" onclick="confirmDeleteEntry(\''+e.id+'\', \''+e.description.replace(/'/g,"\\'")+'\')" title="Excluir"><i class="fa-solid fa-trash-can"></i></button>'+
 '</td>'+
       '</td>'+
       '</tr>';
